@@ -3,7 +3,7 @@ class Main {
         return fr + se + tr;
     }
 
-    void assert(int fn, int rig) {
+    void xassert(int fn, int rig) {
         if (fn == rig) {
             System.out.println("совпадает");
         } else {
@@ -12,10 +12,10 @@ class Main {
     }
 
     void datachek() {
-        assert(sum3(10, 20, 37), 67);
-        assert(sum3(0, 0, 0), 0);
-        assert(sum3(-5, -3, 5), -3);
-        assert(sum3(333333, 333333, 333333), 999999);
+        xassert(sum3(10, 20, 37), 67);
+        xassert(sum3(0, 0, 0), 0);
+        xassert(sum3(-5, -3, 5), -3);
+        xassert(sum3(333333, 333333, 333333), 999999);
     }
 
     static void main(String[] args) {
