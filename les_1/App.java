@@ -18,7 +18,7 @@ class Main {
         assert(sum3(333333, 333333, 333333), 999999);
     }
 
-    static void main(String[] args) {
+        static void main(String[] args) {
         Main app = new Main(); // так как методы sum3 и datachek не статичные, создаем объект
         System.out.println("inf");
         System.out.println(app.sum3(10, 20, 37));
