@@ -1,26 +1,12 @@
-class Main {
-    int sum3(int fr, int se, int tr) {
-        return fr + se + tr;
-    }
+public class Main {
+    public static void main(String[] args) {
+        Mth math = new Mth();
 
-    void xassert(int fn, int rig) {
-        if (fn == rig) {
-            System.out.println("совпадает");
-        } else {
-            System.out.println("неверно");
-        }
-    }
+        System.out.println("Результат sum3: " + math.sum3(10, 20, 37));
+        System.out.println("Результат eq3: " + math.eq3(10, 20, 37));
+        System.out.println();
 
-    void datachek() {
-        xassert(sum3(10, 20, 37), 67);
-        xassert(sum3(0, 0, 0), 0);
-        xassert(sum3(-5, -3, 5), -3);
-        xassert(sum3(333333, 333333, 333333), 999999);
-    }
-
-    static void main(String[] args) {
-        Main app = new Main();
-        System.out.println(app.sum3(10, 20, 37));
-        app.datachek();
+        MathTest tester = new MathTest();
+        tester.runTests();
     }
 }
