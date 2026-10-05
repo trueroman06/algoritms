@@ -19,8 +19,7 @@ class Main {
     }
 
     static void main(String[] args) {
-        Main app = new Main(); // так как методы sum3 и datachek не статичные, создаем объект
-        System.out.println("inf");
+        Main app = new Main();
         System.out.println(app.sum3(10, 20, 37));
         app.datachek();
     }
