@@ -1,12 +1,12 @@
 public class Main {
     public static void main(String[] args) {
-        Mth math = new Mth();
+        Mth mth = new Mth();
 
-        System.out.println("Результат sum3: " + math.sum3(10, 20, 37));
-        System.out.println("Результат eq3: " + math.eq3(10, 20, 37));
+        System.out.println("Результат sum3: " + mth.sum3(10, 20, 37));
+        System.out.println("Результат eq3: " + mth.eq3(10, 20, 37));
         System.out.println();
 
-        MathTest tester = new MathTest();
-        tester.runTests();
+        MathTest tst1 = new MathTest();
+        tst1.runTests();
     }
 }
