@@ -1,5 +1,5 @@
 
-public class datex {
+public class datex{
     private static final int[] daysInMonth = {
             31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
     };
@@ -20,6 +20,7 @@ public class datex {
 
     }
     private static boolean isLeapYear(int year) {
+
         return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
     }
 }
