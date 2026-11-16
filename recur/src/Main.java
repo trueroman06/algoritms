@@ -8,13 +8,9 @@ int xsum(int[] numbers) {
         }
         return numbers[0] + xsum(rest);
     }
-
-};
+}
 
 void main() {
-    int[] numbers = {1, 2, 3, 4, 5};
-    
-    IO.println(xsum(numbers));ж
-
-
+    int[] numbers = { 1, 2, 3, 4, 5 };
+    IO.println(xsum(numbers));
 }
