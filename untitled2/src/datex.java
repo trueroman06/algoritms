@@ -5,21 +5,17 @@ public class datex{
     };
     public static boolean isData(int y, int m, int d){
                 int maxDays = 0;
-        if (!(y >= 1 && y <= 10000)){
-            return false;
+        boolean yer = (y >= 1 && y <= 10000);
+
+        boolean mon =(m >= 1 && m <= 12);
+        if(mon){
+            maxDays = daysInMonth[m-1];
         }
-        if(!(m >= 1 && m <= 12)){
-            return false;
-        }
-        maxDays = daysInMonth[m-1];
         if (m == 2 && isLeapYear(y)){
             maxDays = 29;
         }
-        if(!(d >= 1 && d <= maxDays)){
-            return false;
-        }
-        return true;
-
+        boolean da = (d >= 1 && d <= maxDays);
+        return (yer && mon) && da);
     }
     private static boolean isLeapYear(int year) {
 
